@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hussain Communication | Products</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: linear-gradient(135deg, #1e3c72, #6a11cb, #ff7a18); color: white; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: rgba(0,0,0,0.3);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.1);
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover { background: rgba(255,255,255,0.3); transform: scale(1.1); }
+
+    header { text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); }
+    header p { font-size: 1.2rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.3); margin-top: 10px; }
+
+    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 50px 20px; }
+    .card { background: rgba(255,255,255,0.1); border-radius: 20px; padding: 25px 20px; width: 250px; text-align: center; transition: 0.3s; backdrop-filter: blur(5px); cursor: pointer; }
+    .card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.2); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
+    .card h3 { margin: 10px 0; font-size: 1.3rem; }
+    .card p { font-size: 1rem; }
+
+    footer { text-align: center; padding: 20px; background: rgba(0,0,0,0.3); font-size: 0.9rem; margin-top: 50px; }
+
+    @media (max-width: 600px) { .cards { flex-direction: column; align-items: center; } .card { width: 90%; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>Our Products</h1>
+  <p>Check out our range of phones and accessories</p>
+</header>
+
+<section class="cards">
+  <div class="card" onclick="alert('Phones selected!')">
+    <h3>Phones</h3>
+    <p>Latest smartphones at best prices.</p>
+  </div>
+  <div class="card" onclick="alert('Accessories selected!')">
+    <h3>Accessories</h3>
+    <p>Covers, chargers, cables & more.</p>
+  </div>
+  <div class="card" onclick="alert('Earphones selected!')">
+    <h3>Earphones</h3>
+    <p>High quality sound & comfort.</p>
+  </div>
+  <div class="card" onclick="alert('Speakers selected!')">
+    <h3>Speakers</h3>
+    <p>Portable & powerful speakers.</p>
+  </div>
+  <div class="card" onclick="alert('Smart Watches selected!')">
+    <h3>Smart Watches</h3>
+    <p>Track fitness and notifications.</p>
+  </div>
+</section>
+
+<footer>&copy; 2026 Hussain Communication. All Rights Reserved.</footer>
+
+</body>
+</html>

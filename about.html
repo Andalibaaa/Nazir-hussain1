@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hussain Communication | About Us</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: linear-gradient(135deg, #1e3c72, #6a11cb, #ff7a18); color: white; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: rgba(0,0,0,0.3);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      padding: 12px 25px;
+      border-radius: 30px;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.1);
+      font-weight: bold;
+      color: white;
+    }
+    nav a:hover { background: rgba(255,255,255,0.3); transform: scale(1.1); }
+
+    header { text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 3rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); }
+    header p { font-size: 1.2rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.3); margin-top: 10px; }
+
+    .content { max-width: 800px; margin: 40px auto; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(5px); }
+    .content h2 { font-size: 2rem; margin-bottom: 15px; }
+    .content p { font-size: 1rem; line-height: 1.6; }
+
+    .btn { margin-top: 20px; padding: 12px 25px; font-size: 1rem; border-radius: 30px; background: rgba(255,255,255,0.2); border: none; color: white; cursor: pointer; transition: 0.3s; }
+    .btn:hover { background: rgba(255,255,255,0.4); transform: scale(1.05); }
+
+    footer { text-align: center; padding: 20px; background: rgba(0,0,0,0.3); font-size: 0.9rem; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+  <h1>About Hussain Communication</h1>
+  <p>Learn more about our journey and services.</p>
+</header>
+
+<section class="content">
+  <h2>Our Story</h2>
+  <p>Hussain Communication started in 2010 with a vision to provide high-quality mobile phones and accessories to our community. Our mission is to deliver excellent products and services at affordable prices while maintaining customer satisfaction at the highest level.</p>
+
+  <h2>Our Services</h2>
+  <p>We specialize in mobile phone sales, accessories, and repair services. Our team is committed to helping you find the right device and keeping it in perfect condition. From latest smartphones to essential accessories, we have it all under one roof.</p>
+
+  <button class="btn" onclick="location.href='contact.html'">Contact Us</button>
+</section>
+
+<footer>&copy; 2026 Hussain Communication. All Rights Reserved.</footer>
+
+</body>
+</html>
